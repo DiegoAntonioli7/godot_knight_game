@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://80tuj4ateulk"]
+
+[ext_resource type="PackedScene" uid="uid://bq6duhajr26rv" path="res://scenes/player/player_body.tscn" id="1_tcuu4"]
+[ext_resource type="PackedScene" uid="uid://bhruq4uwm7hsd" path="res://scenes/system/game_ui.tscn" id="2_cv7it"]
+
+[node name="test_ui" type="Node2D"]
+
+[node name="player_body" parent="." instance=ExtResource("1_tcuu4")]
+position = Vector2(438, 295)
+
+[node name="CanvasLayer" parent="." instance=ExtResource("2_cv7it")]

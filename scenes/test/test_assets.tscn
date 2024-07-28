@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://87ywm65ftowv"]
+
+[ext_resource type="Texture2D" uid="uid://b47kujjhi16dr" path="res://addos/Tiny Swords (Update 010)/Resources/Gold Mine/GoldMine_Inactive.png" id="1_i757e"]
+[ext_resource type="Texture2D" uid="uid://bnlojkr143evj" path="res://addos/Tiny Swords (Update 010)/Resources/Sheep/HappySheep_All.png" id="2_p5yf6"]
+[ext_resource type="Texture2D" uid="uid://d2ia3cwc0emwa" path="res://addos/Tiny Swords (Update 010)/Resources/Sheep/HappySheep_Idle.png" id="3_3iqw1"]
+[ext_resource type="Texture2D" uid="uid://df5xjjyra6ont" path="res://addos/Tiny Swords (Update 010)/Resources/Trees/Tree.png" id="4_3gwio"]
+
+[node name="test_scene" type="Node2D"]
+
+[node name="GoldMineInactive" type="Sprite2D" parent="."]
+position = Vector2(2269, 189)
+texture = ExtResource("1_i757e")
+
+[node name="HappySheepAll" type="Sprite2D" parent="."]
+position = Vector2(2314, 374)
+texture = ExtResource("2_p5yf6")
+
+[node name="HappySheepIdle" type="Sprite2D" parent="."]
+position = Vector2(2324, -22)
+texture = ExtResource("3_3iqw1")
+
+[node name="Tree" type="Sprite2D" parent="."]
+position = Vector2(1988, -163)
+texture = ExtResource("4_3gwio")

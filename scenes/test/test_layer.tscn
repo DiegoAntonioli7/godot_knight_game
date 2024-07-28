@@ -1,0 +1,40 @@
+[gd_scene load_steps=8 format=3 uid="uid://ctofp0qa2dwi7"]
+
+[ext_resource type="Texture2D" uid="uid://bonk1x8jkpudo" path="res://addos/Tiny Swords (Update 010)/Factions/Knights/Troops/Warrior/Red/Warrior_Red.png" id="1_m5u01"]
+[ext_resource type="PackedScene" uid="uid://bq6duhajr26rv" path="res://scenes/player/player_body.tscn" id="2_5mwa2"]
+[ext_resource type="PackedScene" uid="uid://clpm5svbrccph" path="res://scenes/enemies/Pawn.tscn" id="3_wlyn2"]
+[ext_resource type="PackedScene" uid="uid://dlcxj1f7a3kid" path="res://scenes/enemies/goblin.tscn" id="4_cc3f4"]
+[ext_resource type="PackedScene" uid="uid://4inwfv2l3abm" path="res://scenes/enemies/Sheep.tscn" id="5_lefci"]
+[ext_resource type="PackedScene" uid="uid://v6i8n41nxyuq" path="res://misc/meat.tscn" id="6_232mj"]
+[ext_resource type="PackedScene" uid="uid://bhruq4uwm7hsd" path="res://scenes/system/game_ui.tscn" id="7_g6k3r"]
+
+[node name="test_layer" type="Node2D"]
+
+[node name="WarriorRed" type="Sprite2D" parent="."]
+position = Vector2(2496, 767)
+texture = ExtResource("1_m5u01")
+
+[node name="Pawn" parent="." instance=ExtResource("3_wlyn2")]
+position = Vector2(882, 284)
+
+[node name="player_body" parent="." instance=ExtResource("2_5mwa2")]
+position = Vector2(708, 256)
+motion_mode = 1
+
+[node name="goblin" parent="." instance=ExtResource("4_cc3f4")]
+position = Vector2(1078, 368)
+
+[node name="goblin2" parent="." instance=ExtResource("4_cc3f4")]
+position = Vector2(260, 120)
+
+[node name="Pawn2" parent="." instance=ExtResource("5_lefci")]
+position = Vector2(326, 488)
+
+[node name="Pawn3" parent="." instance=ExtResource("5_lefci")]
+position = Vector2(188, 312)
+
+[node name="Meat" parent="." instance=ExtResource("6_232mj")]
+position = Vector2(555, 415)
+life_reg = 10
+
+[node name="CanvasLayer" parent="." instance=ExtResource("7_g6k3r")]
